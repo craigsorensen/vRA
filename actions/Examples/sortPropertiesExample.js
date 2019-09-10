@@ -5,6 +5,7 @@
 		TLDR; create an array of property objects and they will be returned in the order listed in the array.
 
 		Author: Craig Sorensen
+		vRA/vRO Version: 7.6
 */
 
 
