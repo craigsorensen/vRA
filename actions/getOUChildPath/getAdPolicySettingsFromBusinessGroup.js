@@ -17,8 +17,8 @@
 		This action will retrive the distinguishedName defined in an AD policy configured in a business group.
 
 	Requirements: 
-	 - Must have VCACHost endpoint configured with a default endpoint configured.
-	 - Requesting user must be a member of a business group with an AD policy must be assigned
+		- Must have VCACHost endpoint configured with a default endpoint configured.
+		- Requesting user must be a member of a business group with an AD policy must be assigned
 
 	Configure:
 		None

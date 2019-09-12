@@ -18,13 +18,13 @@
 		configured as a drop down menu, this will allow a user to chose their bind location in AD.
 
 	Requirements: 
-	 - Must have ActiveDirectory plug-in installed and configured with a default endpoint configured.
-	 - There is a dependency on the getAdPolicySettingsFromBusinessGroup action. 
-	 - Requesting user must be a member of a business group with an AD policy must be assigned
+		- Must have ActiveDirectory plug-in installed and configured with a default endpoint configured.
+		- There is a dependency on the getAdPolicySettingsFromBusinessGroup action. 
+		- Requesting user must be a member of a business group with an AD policy must be assigned
 
 	Configure:
-	 - Define spliceAmount variable in dnToPath function
-	 - Define path to getAdPolicySettingsFromBusinessGroup action in the main section
+		- Define spliceAmount variable in dnToPath function
+		- Define path to getAdPolicySettingsFromBusinessGroup action in the main section
 
 	Output:
 		This action outputs an Array of Properties. You action must be configured using these settings.
