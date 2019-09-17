@@ -1,6 +1,39 @@
-/* Todo: If more than one IaaS host is present, select the default. var vcacHosts = Server.findAllForType("vCAC:VCACHost"); 
+/*
+	Written By: Craig Sorensen
+	URL: https://github.com/craigsorensen
+	version: 1.0.0
+
+	Disclaimer:
+		THE SAMPLE CODE IS PROVIDED “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING THE IMPLIED WARRANTIES OF 
+		MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS 
+		BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT 
+		LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) 
+		SUSTAINED BY YOU OR A THIRD PARTY, HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, 
+		STRICT LIABILITY, OR TORT ARISING IN ANY WAY OUT OF THE USE OF THIS SAMPLE CODE, EVEN IF ADVISED OF THE POSSIBILITY 
+		OF SUCH DAMAGE.
 	
+	Description:
+		This action will get all applicable networks for a user as configured by the reservations assigned to a business 
+		group. This action will also present a friendly name to the user by grabbing the name and description from the 
+		network profile and formatting it to the user as: <Network Profile Name> - <Network Description>. The actual value
+		will remain the value of the network adapter, as assigned in reservation.
+
+	Requirements: 
+		- Must have VCACHost endpoint configured in vRO
+
+	Output:
+		This action outputs an Array of Properties. You action must be configured using these settings.
+
+	Notes:
+		This was configured to work with a custom third party IPAM solution called Netdot. As a result you may see references
+		to this IPAM provider in the comments below. This should work with other IPAM providers as well without modification.
+
+
+
+	Todo: If more than one IaaS host is present, select the default. var vcacHosts = Server.findAllForType("vCAC:VCACHost"); 
 */
+
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////Functions///////////////////////////////////////////////////
